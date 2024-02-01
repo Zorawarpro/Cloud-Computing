@@ -1,18 +1,6 @@
-import math
-import numpy as np
-from scipy import stats
- 
-# Math library example
-x = 4.0
-y = math.sqrt(x)
-print("Square root of", x, "is", y)
- 
-# NumPy library example
-arr = np.array([1, 2, 3, 4, 5])
-mean = np.mean(arr)
-print("Mean of the array is", mean)
- 
-# SciPy library example
-data = np.array([1, 2, 3, 4, 5])
-result = stats.describe(data)
-print ("Descriptive statistics:", result)
+import string    
+import random # define the random module  
+S = 10  # number of characters in the string.  
+# call random.choices() string module to find the string in Uppercase + numeric data.  
+ran = ''.join(random.choices(string.ascii_uppercase + string.digits, k = S))    
+print("The randomly generated string is : " + str(ran)) # print the random data
